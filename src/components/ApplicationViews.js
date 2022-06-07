@@ -1,17 +1,17 @@
 import React from "react"
 import { Route } from "react-router-dom"
-import { Home } from "./Taskboard"
-import { taskCard } from "./task/taskCard"
+import { Taskboard } from "./Taskboard"
+import { taskCard } from "./task/taskCard.js"
 
 export const ApplicationViews = () => {
     return (
         <>
             <Route exact path="/">
-                <Home />
+                <Taskboard />
             </Route>
 
             <Route path="/tasks">
-                <AnimalCard />
+                <taskCard />
             </Route>
         </>
     )
